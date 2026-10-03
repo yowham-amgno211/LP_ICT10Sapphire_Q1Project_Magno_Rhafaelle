@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Skills Test</title>
+
+    <link rel="stylesheet" href="https://pyscript.net" />
+    <script type="module" src="https://pyscript.net"></script>
+
+    <style>
+        body {
+            background-image: url("frozen_moments.jpg");
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav {
+            margin-bottom: 30px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: floralwhite;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #947da7;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .container {
+            background-color: rgb(138, 180, 217);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 450px;
+            color: floralwhite;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2, h3 {
+            text-align: center;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed floralwhite;
+        }
+        .menu-item label {
+            cursor: pointer;
+            flex-grow: 1;
+            margin-left: 10px;
+        }
+        button {
+            width: 100%;
+            background-color: goldenrod;
+            color: floralwhite;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #947da7;
+        }
+        #show {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e2ca52;
+            border-left: 10px solid #947da7;
+            border-radius: 4px;
+        }
+    </style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css"/>
+<script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Receipt Generator</a> | 
+        <a href="sku.html">SKU Generator</a>
+    </nav>
+
+    <div class="container">
+        <h2>Miss Hunter's Den</h2>
+        <h3>Official L&DS Merchandise!</h3>
+        
+
+        <div class="menu-item">
+            <input type="checkbox" id="item1" value="406.79">
+            <label for="item1">Xavier 2025 Birthday Starry Stroll Series Chibi Metal Pin</label>
+            <span>₱406.79</span>
+        </div>
+
+        <div class="menu-item">
+            <input type="checkbox" id="item2" value="1877.51">
+            <label for="item2">Zayne: God of Annihilation Series Acrylic Standee</label>
+            <span>₱1877.51</span>
+        </div>
+
+        <div class="menu-item">
+            <input type="checkbox" id="item3" value="625.84">
+            <label for="item3">Rafayel 2026 Birthday Duskbright Steps Series Chibi Pin and Case Set</label>
+            <span>₱625.84</span>
+        </div>
+
+        <div class="menu-item">
+            <input type="checkbox" id="item4" value="625.84">
+            <label for="item4">Sylus 2026 Birthday Rainlit Night Series Chibi Pin and Case Set</label>
+            <span>₱625.84</span>
+        </div>
+
+        <div class="menu-item">
+            <input type="checkbox" id="item5" value="625.84">
+            <label for="item5">Caleb 2026 Birthday Your Skyblue Series Chibi Pin and Case Set</label>
+            <span>₱625.84</span>
+        </div>
+
+        <div class="menu-item">
+            <input type="checkbox" id="item6" value="625.84">
+            <label for="item5">SPECIAL ITEM: Valko Plush Doll</label>
+            <span>₱1,166</span>
+        </div>
+
+        <button py-click="create_order">Create Order</button>
+
+        <div id="show">Your receipt will appear here!</div>
+    </div>
+
+
+    <script type="py" src="main.py" config='{"packages":[]}'></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
